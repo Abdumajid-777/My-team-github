@@ -14,9 +14,10 @@
 </style>
 
 <body>
-    <header id="header" class="bg-[#014E56] py-[73px]">
+    <header id="header" class="bg-[#014E56] py-12 md:py-16 lg:py-[73px]">
         <div class="max-w-[1150px] justify-between md:justify-normal mx-auto flex items-center px-5">
-            <a href="#" class="flex md:mr-12 lg:mr-20"><img src="./img/indexIMG/header/myteam.svg" alt="My Team"></a>
+            <a href="#" class="md:flex w-[128px] md:w-[160px] md:mr-12 lg:mr-20"><img src="./img/indexIMG/header/myteam.svg"
+                    alt="My Team"></a>
             <ul class="md:flex gap-10 hidden">
                 <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 hover:text-[#F67E7E] hover:border-b transition-all hover:border-b-[#F67E7E] border-b border-b-[#014E56]"
                         href="index.html">home</a></li>
@@ -26,37 +27,55 @@
             <a href="Contact.html"
                 class="ml-auto px-8 pt-[9px] hidden md:flex pb-[11px] text-white font-semibold text-lg leading-7 border-2 border-[#FFFFFF] rounded-full hover:bg-white ease-in duration-300 hover:text-[#014E56]">contact
                 us</a>
-            <button class="border-none flex md:hidden lg:hidden">
+            <button id="hamburgerBtn" class="border-none flex md:hidden lg:hidden">
                 <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="20" height="3" fill="white" />
                     <rect y="7" width="20" height="3" fill="white" />
                     <rect y="14" width="20" height="3" fill="white" />
                 </svg>
             </button>
+            <div id="responsiveMenu" style="transition: all .6s;"
+                class="max-w-[255px] md:hidden  flex flex-col h-screen pt-[56px] pb-[391px] fixed top-0 -right-full pr-[25px] pl-12 bg-[#2C6269]">
+                <button id="closeMenu" class="mb-10 ml-auto">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.99989 6.37857L2.98948 0.368164L0.868164 2.48948L6.87857 8.49989L0.868164 14.5103L2.98948 16.6316L8.99989 10.6212L15.0103 16.6316L17.1316 14.5103L11.1212 8.49989L17.1316 2.48948L15.0103 0.368164L8.99989 6.37857Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <ul class="flex flex-col gap-y-6 mb-9">
+                    <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 transition-all"
+                            href="index.html">home</a></li>
+                    <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 transition-all"
+                            href="about.html">about</a></li>
+                </ul>
+                <a href="Contact.html"
+                    class="px-8 pt-[9px] md:flex pb-[11px] text-white font-semibold text-lg leading-7 border-2 border-[#FFFFFF] rounded-full hover:bg-white ease-in duration-300 hover:text-[#014E56]">contact
+                    us</a>
+            </div>
         </div>
-        <!-- <div class="h-screen bg-[#2C6269] z-10 -trans-x-[100%]"></div> -->
     </header>
-    <section class="bg-[#014E56] pt-[56px] pb-[250px]">
-        <div class="max-w-[1150px] px-5 flex justify-between items-center mx-auto">
-            <h1 class="text-white font-bold mb-6  text-[100px] leading-[100px]">Find the <br> best <span
+    <section class="bg-[#014E56] pt-8 pb-[197px] md:pb-[256px] md:pt-12 lg:pt-[56px] lg:pb-[250px]">
+        <div class="max-w-[1150px] px-5 text-center lg:text-left flex justify-center flex-col lg:flex-row items-center lg:flex lg:justify-between lg:items-center mx-auto">
+            <h1 class="text-white font-bold mb-[18px] md:mb-6 text-[40px] leading-10 md:text-[64px] md:leading-[56px] lg:text-[100px] lg:leading-[100px]">Find the <br> best <span
                     class="text-[#F67E7E]">talent</span></h1>
             <div class="">
-                <hr class="flex border-4 w-[50px] border-[#79C8C7] mb-20">
-                <p class="max-w-[445px] font-semibold text-white text-lg leading-7">Finding the right people and
-                    building high <br> performing teams can be hard. Most companies <br>
-                    aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                <hr class="hidden lg:flex border-4 w-[50px] border-[#79C8C7] mb-20">
+                <p class="w-full font-semibold text-white text-[15px] md:text-lg leading-7">Finding the right people and
+                    building high <br class="md:hidden lg:hidden flex"> <br class="hidden lg:flex flex-col"> performing teams can <br class="md:flex hidden flex-col lg:hidden"> be hard. Most companies <br class="hidden lg:flex flex-col">
+                    aren’t tapping into the abundance of <br class="md:flex hidden lg:hidden"> global talent. <br class="lg:flex flex-col hidden"> We’re about to change that.</p>
             </div>
         </div>
     </section>
-    <section class="bg-[#012F34] py-[140px]">
-        <div class="max-w-[1150px] px-5 mx-auto flex justify-between">
-            <div class="">
+    <section class="bg-[#012F34] md:py-[100px] lg:py-[140px]">
+        <div class="max-w-[1150px] px-5 mx-auto lg:flex justify-between">
+            <div class="md:ml-[98px] lg:ml-0">
                 <hr class="flex border-4 w-[50px] border-[#F67E7E] mb-14">
-                <p class="max-w-[445px] font-bold text-white text-[48px] leading-[48px]">Build & manage distributed
+                <p class="lg:max-w-[445px] font-bold text-white md:text-[32px] md:max-w-[445px] lg:text-[48px] leading-[48px]">Build & manage distributed
                     teams
                     like no one else.</p>
             </div>
-            <div class="">
+            <div class="md:max-w-[478px] lg:max-w-full ml-auto">
                 <div class="mt-[58px] mb-8">
                     <h4 class="text-[#F67E7E] font-bold mb-4 text-lg leading-7">Experienced Individuals</h4>
                     <p class="text-[#FFFFFF] text-base leading-6 font-medium">Our network is made up of highly
@@ -143,10 +162,11 @@
             </div>
             <div class="">
                 <p class="text-white opacity-60 font-semibold text-[15px] leading-6">987 Hillcrest Lane <br>Irvine, CA
-                    <br>California 92714 <br>Call Us : 949-833-7432</p>
+                    <br>California 92714 <br>Call Us : 949-833-7432
+                </p>
             </div>
             <div class="ml-auto">
-                <ul class="mb-[51px] flex ml-auto justify-end gap-4">
+                <ul class="mb-[51px] flex ml-auto justify-end gap-4 items-center">
                     <li><a
                             href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2F"><img
                                 src="./img/indexIMG/footer/Facebook.svg" alt=""></a></li>
@@ -154,7 +174,8 @@
                     </li>
                     <li><a href="https://x.com/?lang=ru"><img src="./img/indexIMG/footer/Twitter.svg" alt=""></a></li>
                 </ul>
-                <p class="text-white opacity-60 font-semibold text-[15px] leading-6">Copyright 2020. All Rights Reserved</p>
+                <p class="text-white opacity-60 font-semibold text-[15px] leading-6">Copyright 2020. All Rights Reserved
+                </p>
             </div>
         </div>
     </footer>

@@ -9,9 +9,10 @@
 </head>
 
 <body>
-    <header class="bg-[#014E56] py-[73px]">
+    <header id="header" class="bg-[#014E56] py-[73px]">
         <div class="max-w-[1150px] justify-between md:justify-normal mx-auto flex items-center px-5">
-            <a href="#" class="flex md:mr-12 lg:mr-20"><img src="./img/indexIMG/header/myteam.svg" alt="My Team"></a>
+            <a href="#" class="md:flex md:mr-12 lg:mr-20"><img src="./img/indexIMG/header/myteam.svg"
+                    alt="My Team"></a>
             <ul class="md:flex gap-10 hidden">
                 <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 hover:text-[#F67E7E] hover:border-b transition-all hover:border-b-[#F67E7E] border-b border-b-[#014E56]"
                         href="index.html">home</a></li>
@@ -21,15 +22,33 @@
             <a href="Contact.html"
                 class="ml-auto px-8 pt-[9px] hidden md:flex pb-[11px] text-white font-semibold text-lg leading-7 border-2 border-[#FFFFFF] rounded-full hover:bg-white ease-in duration-300 hover:text-[#014E56]">contact
                 us</a>
-            <button class="border-none flex md:hidden lg:hidden">
+            <button id="hamburgerBtn" class="border-none flex md:hidden lg:hidden">
                 <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="20" height="3" fill="white" />
                     <rect y="7" width="20" height="3" fill="white" />
                     <rect y="14" width="20" height="3" fill="white" />
                 </svg>
             </button>
+            <div id="responsiveMenu" style="transition: all .6s;"
+                class="max-w-[255px] md:hidden  flex flex-col h-screen pt-[56px] pb-[391px] fixed top-0 -right-full pr-[25px] pl-12 bg-[#2C6269]">
+                <button id="closeMenu" class="mb-10 ml-auto">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.99989 6.37857L2.98948 0.368164L0.868164 2.48948L6.87857 8.49989L0.868164 14.5103L2.98948 16.6316L8.99989 10.6212L15.0103 16.6316L17.1316 14.5103L11.1212 8.49989L17.1316 2.48948L15.0103 0.368164L8.99989 6.37857Z"
+                            fill="white" />
+                    </svg>
+                </button>
+                <ul class="flex flex-col gap-y-6 mb-9">
+                    <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 transition-all"
+                            href="index.html">home</a></li>
+                    <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 transition-all"
+                            href="about.html">about</a></li>
+                </ul>
+                <a href="Contact.html"
+                    class="px-8 pt-[9px] md:flex pb-[11px] text-white font-semibold text-lg leading-7 border-2 border-[#FFFFFF] rounded-full hover:bg-white ease-in duration-300 hover:text-[#014E56]">contact
+                    us</a>
+            </div>
         </div>
-        <!-- <div class="h-screen bg-[#2C6269] z-10 -trans-x-[100%]"></div> -->
     </header>
     <section class="pt-[47px] pb-[120px] bg-[#014E56]">
         <div class="max-w-[1150px] mx-auto flex items-center justify-between">
