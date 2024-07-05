@@ -9,9 +9,10 @@
 </head>
 
 <body class="body">
-    <header id="header" class="bg-[#014E56] py-[73px]">
+    <header id="header" class="bg-[#014E56] py-12 md:py-16 lg:py-[73px]">
         <div class="max-w-[1150px] justify-between md:justify-normal mx-auto flex items-center px-5">
-            <a href="#" class="md:flex md:mr-12 lg:mr-20"><img src="./img/indexIMG/header/myteam.svg" alt="My Team"></a>
+            <a href="index.html" class="md:flex w-[128px] md:w-[160px] md:mr-12 lg:mr-20"><img
+                    src="./img/indexIMG/header/myteam.svg" alt="My Team"></a>
             <ul class="md:flex gap-10 hidden">
                 <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 hover:text-[#F67E7E] hover:border-b transition-all hover:border-b-[#F67E7E] border-b border-b-[#014E56]"
                         href="index.html">home</a></li>
@@ -384,7 +385,7 @@
         <div class="max-w-[1150px] mx-auto px-10">
             <h3 class="text-white text-[32px] leading-8 md:text-5xl md:leading-[48px] mb-16 text-center">Some of our
                 clients</h3>
-            <div class="flex flex-col gap-y-16 md:gap-y-0 md:flex-col-reverse justify-between gap-10 items-center">
+            <div class="flex flex-col gap-y-16 md:gap-y-0 md:flex-row justify-between gap-10 items-center">
                 <img class="lg:max-w-[165px] max-w-[150px] md:max-w-[100px]" src="./img/page2/section/the-verge.png"
                     alt="">
                 <img class="lg:max-w-[184px] max-w-[150px] md:max-w-[100px]"
@@ -410,12 +411,12 @@
                 us</a>
         </div>
     </section>
-    <footer class="bg-[#002529] py-12">
+    <footer class="bg-[#002529] py-16 md:py-12">
         <div class="max-w-[1150px] mx-auto px-5 lg:flex items-center">
-            <div class="flex lg:justify-normal md:justify-between lg:mb-0 md:mb-8">
-                <div class="mr-[125px]">
-                    <a class="flex mb-[25px]" href="index.html">
-                        <svg width="160" height="40" viewBox="0 0 160 40" fill="none"
+            <div class="flex lg:justify-normal justify-center md:text-left !flex-col md:!flex-row md:justify-between lg:mb-0 md:mb-8">
+                <div class="md:mb-0 mb-6 md:mr-[125px]">
+                    <a class="flex mb-[25px] md:w-[160px] w-[96px] mx-auto justify-center md:justify-normal" href="index.html">
+                        <svg width="" height="40" viewBox="0 0 160 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="myteam 2">
                                 <path id="myteam" fill-rule="evenodd" clip-rule="evenodd"
@@ -424,15 +425,15 @@
                             </g>
                         </svg>
                     </a>
-                    <ul class="flex gap-10">
+                    <ul class="flex gap-10 justify-center md:justify-normal">
                         <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 hover:text-[#F67E7E] hover:border-b transition-all hover:border-b-[#F67E7E] border-b border-b-[#002529]"
                                 href="index.html">home</a></li>
                         <li><a class="flex text-white font-semibold text-lg leading-7 ease-in duration-300 hover:text-[#F67E7E] hover:border-b transition-all hover:border-b-[#F67E7E] border-b border-b-[#002529]"
                                 href="about.html">about</a></li>
                     </ul>
                 </div>
-                <div class="">
-                    <p class="text-white md:text-end lg:text-start opacity-60 font-semibold text-[15px] leading-6">987
+                <div class="md:mb-0 mb-10">
+                    <p class="text-white text-center md:text-end lg:text-start opacity-60 font-semibold text-[15px] leading-6">987
                         Hillcrest Lane <br>Irvine,
                         CA
                         <br>California 92714 <br>Call Us : 949-833-7432
@@ -440,7 +441,7 @@
                 </div>
             </div>
             <div class="ml-auto md:flex md:items-center md:justify-between lg:justify-normal lg:block">
-                <ul class="lg:mb-[51px] flex lg:ml-auto justify-end gap-4 items-center">
+                <ul class="lg:mb-[51px] md:mb-0 mb-4 flex lg:ml-auto justify-center text-center md:text-left md:justify-end gap-4 items-center">
                     <li><a target="_blank"
                             href="https://www.facebook.com/checkpoint/1501092823525282/?next=https%3A%2F%2Fwww.facebook.com%2F"><img
                                 src="./img/indexIMG/footer/Facebook.svg" alt=""></a></li>
@@ -450,7 +451,7 @@
                     <li><a target="_blank" href="https://x.com/?lang=ru"><img src="./img/indexIMG/footer/Twitter.svg"
                                 alt=""></a></li>
                 </ul>
-                <p class="text-white opacity-60 font-semibold text-[15px] leading-6">Copyright 2020. All Rights Reserved
+                <p class="text-white opacity-60 text-center md:text-left font-semibold text-[15px] leading-6">Copyright 2020. All Rights Reserved
                 </p>
             </div>
         </div>
